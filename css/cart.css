@@ -1,0 +1,124 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    font-size: x-large;
+}
+
+th {
+    background-color: black;
+    color: #FF9E01;
+    font-size: x-large;
+}
+
+.table-left-align {
+    text-align: left;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+}
+
+#payment {
+text-align: center;
+}
+
+.payment {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: x-large;
+    margin-right: 70px;
+    height: 80px;
+    width: 80%;
+}
+.payment:hover {
+    background-color: rgb(22, 22, 224);
+}
+
+.total-row td {
+    background-color: black;
+    color: #FF9E01;
+}
+
+.remove-button {
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.remove-button:hover {
+    background-color: #d32f2f;
+}
+
+.quantity-input {
+    width: 50px;
+    padding: 4px;
+    text-align: center;
+    font-size: large;
+}
+
+.total-row {
+    font-weight: bold;
+    background-color: rgba(177,136,84,0.41);
+}
+
+img {
+    width: 130px;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#discount-section label {
+    margin-right: 10px;
+}
+
+#discount-input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#discount-input:focus {
+    outline: none;
+    border-color: dodgerblue;
+}
+
+#discount-button {
+    background-color: forestgreen;
+    color: black;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+#discount-button:hover {
+    background-color: rgb(44, 204, 44);
+}
+
+/*#discount-section button:hover {
+    background-color: rgb(37, 205, 37);
+}*/
