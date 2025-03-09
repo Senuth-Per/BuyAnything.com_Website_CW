@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <meta charset="UTF-8">
+	  <title> BuyAnything.com </title>
+	  <link rel="stylesheet" href="css/feedback.css">
+	</head>
+	<body class="background">
+		<header>
+			<div class="logo">
+				<img src="Images/logo4.png" alt="BuyAnything.com Logo">
+			</div>	
+			<p> Discover Everything You Need, Just a Click Away at BuyAnything.com! </p>
+		</header>
+	  
+		<div class="nav-container">
+			<div class="topnav">
+				<a href="main.html"> Home </a>
+				<a href="signup.html"> Sign up </a>
+				<a href="gallery.html"> Gallery </a>
+				<a href="reviews.html"> Reviews </a>
+				<a class="active" href="feedback.html"> Feedback </a>
+				<a href="editors.html"> Editors </a>
+				<a href="quiz.html"> Quiz </a>
+			</div>
+		</div>
+	  <br><br><br>
+      
+	  <div class="form">
+         <h1>Enquiry Form</h1>
+         <p>Complete this Enquiry Form to obtain additional information about our services or send personal complaints. We will analyze your enquiry and return to you    shortly by email or phone.</p>
+
+			<form name="Feedback" method="get" onsubmit="return validateForm()">
+       
+				<fieldset>
+                
+					<label for="name">Name:</label>
+                        <input type="text" id="name" name="name" ><br>
+					
+					<label for="occupation">occupation:</label>
+                        <input type="text" id="occupation" name="occupation" ><br>
+
+					<label for="email">Email:</label> 
+                        <input type="email" id="email" name="email" ><br>
+
+					<label for="queryTheme">Category:</label>
+                        <select id="queryTheme" name="queryTheme" >
+                            <option value="">Select</option>
+                            <option value="General">General</option>
+                            <option value="Technical">Technical</option>
+                            <option value="Sales">Sales</option>
+                        </select>  <br>
+                        
+                    <label for="contact">Do you want to be contacted by phone?</label>
+                        <select id="con" name="con" >
+                            <option value="">Select</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>  <br>
+                        
+                    <label for="phone">Phone:</label> 
+                        <input type="text" id="phone" name="phone" ><br>
+                        
+                    <label for="queryDetails">How can we help you?</label>
+                        <textarea id="queryDetails" name="queryDetails" rows="4" ></textarea>
+                    
+                    
+					<button type="reset">Reset</button>
+					<button type="submit">Submit</button>
+					
+				</fieldset>
+			</form>
+		</div>
+		
+		<footer>
+			<div class="editor-link">
+			<p>© Copyright <a href="Deegayu.html"> Deegayu Mihiraj </a>. All rights reserved</p>
+			</div>
+		</footer>
+        
+<script>
+    function validateForm() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const queryTheme = document.getElementById('queryTheme').value;
+        const queryDetails = document.getElementById('queryDetails').value;
+
+        // Check if required fields are filled
+        if (name === "" || email === "" || queryTheme === "" || queryDetails === "") {
+            alert("Please fill in all required fields.");
+            return false; // Prevent form submission
+        }
+
+        // Construct a summary (optional)
+        const summary = "Name: " + name + "\nEmail: " + email + "\nCategory: " + queryTheme + "\nDetails: " + queryDetails;
+
+        // Display summary (optional)
+        alert(summary);
+
+        // Form will submit if everything is filled
+        return true;
+    }
+</script>
+		
+	</body>
+	
+</html>
