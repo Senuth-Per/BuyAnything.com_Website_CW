@@ -1,0 +1,135 @@
+/* Form styles */
+.form {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #C9FF81;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form select,
+.form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+.form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.form button[type="reset"] {
+  background-color: #f44336;
+}
+
+.form button[type="submit"]:hover,
+.form button[type="reset"]:hover {
+}
+
+.form h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.form p {
+  font-size: 16px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.background {
+  background-color: #C5EC63  ; /* Set the background color outside the form */
+}
+
+
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  padding: 10px 10px;
+  text-align: center;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  bottom: 5px;
+}
+
+.logo img {
+  height: 150px;
+  width: auto; /* Maintain aspect ratio */
+}
+
+header p {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding-left: 180px; /* Adjust this value to provide enough space for the logo */
+}
+
+/* Navigation bar */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #333;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  width: 900px;
+  height: 50px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 17px 17px;
+  text-decoration: none;
+  font-size: 20px;
+  width: 150px;
+}
+
+.topnav a:hover {
+  background-color: #FF9E01;
+  color: black;
+}
+
