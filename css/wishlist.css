@@ -1,0 +1,41 @@
+.description {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+/*#wishlist-items {
+    height: 250px;
+}*/
+
+#text {
+    position: absolute;
+    color: white;
+    font-family: "Tempus Sans ITC", serif;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    font-size: 35px;
+    margin: 70px;
+}
+/*#pic {
+    width: 100%;
+    height: 300px;
+}*/
+.description img {
+    width: 100%;
+}
+
+li a:hover {
+    background-color: white;
+    color: tan;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+}
