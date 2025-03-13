@@ -1,0 +1,32 @@
+.bodyW {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-image: url("Images/ST1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+}
+
+.presentation {
+	text-align: center;
+}
+		
+legend {
+	font-size: 24px;
+	font-weight: bold;
+	padding: 10px;
+}
+		
+fieldset {
+	position: relative;
+	left: 20px; /* Adjust as needed */
+	top: 50px; 
+	border: 2px solid #ccc;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
